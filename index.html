@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionamiento de los Optoacopladores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Funcionamiento de los Optoacopladores</h1>
+
+        <p>
+            Un <strong>optoacoplador</strong> es un dispositivo electrónico que transmite señales eléctricas entre dos
+            circuitos aislados galvánicamente, utilizando la luz como medio de transferencia. Este aislamiento es
+            fundamental para proteger los circuitos sensibles de picos de voltaje, interferencias electromagnéticas o
+            transitorios de alta energía, lo que es especialmente importante en entornos industriales o sistemas de
+            control de potencia.
+        </p>
+        <h2>¿Cómo Funciona un Optoacoplador?</h2>
+        <p>
+            El funcionamiento básico de un optoacoplador se basa en el principio de la optoaislación. El dispositivo
+            está compuesto por un LED (Diodo Emisor de Luz) en el lado de entrada y un receptor, generalmente un
+            fototransistor o un fotodiodo, en el lado de salida.
+        </p>
+
+        <div class="image-container">
+            <img src="Esquema de LED y fototransistor en optoacoplador.jpg"
+                alt="Esquema de LED y fototransistor en optoacoplador">
+        </div>
+
+        <p>
+            Cuando una señal eléctrica (generalmente de baja tensión) pasa a través del LED, éste emite luz. Esta luz
+            viaja a través de una separación física (un espacio vacío o una lente óptica dentro del dispositivo) hasta
+            alcanzar el fototransistor en la salida. El fototransistor detecta la luz y convierte esta señal luminosa
+            nuevamente en una señal eléctrica, pero sin que haya contacto eléctrico directo entre el lado de entrada y
+            el de salida.
+        </p>
+
+        <p>
+            Este aislamiento galvánico permite proteger los sistemas sensibles de sobrecargas de voltaje, ruidos
+            eléctricos o interferencias, algo que sería imposible de lograr con una conexión directa. Además, la luz que
+            se utiliza como medio de transmisión tiene la ventaja de ser inmunizada a los efectos de interferencias
+            electromagnéticas y transitorios, lo que otorga mayor estabilidad al sistema.
+        </p>
+
+        <h2>Componentes Internos de un Optoacoplador</h2>
+        <p>
+            Los optoacopladores están compuestos principalmente por los siguientes elementos:
+        </p>
+
+        <ul>
+            <li><strong>LED (Diodo Emisor de Luz):</strong> El LED es el componente que convierte la señal eléctrica de
+                entrada en luz. Es el encargado de la transmisión de la señal de un lado a otro, funcionando como el
+                emisor de la señal. La corriente que pasa a través del LED determina la cantidad de luz que emite, y
+                esta luz será detectada por el fototransistor o fotodiodo.</li>
+
+            <div class="image-container">
+                <img src="LED en un optoacoplador.jpg" alt="LED en un optoacoplador">
+            </div>
+
+            <li><strong>Fototransistor o Fotodiodo:</strong> El fototransistor (o fotodiodo en otros tipos) es el
+                receptor de la luz emitida por el LED. Su función es convertir la luz en una señal eléctrica. El
+                fototransistor actúa como un interruptor, que se activa cuando recibe luz, permitiendo que fluya
+                corriente a través de él. Dependiendo de la configuración, puede tener un comportamiento lineal o
+                digital.</li>
+
+            <div class="image-container">
+                <img src="Fototransistor en un optoacoplador.jpg" alt="Fototransistor en un optoacoplador">
+            </div>
+
+            <li><strong>Circuito de aislamiento:</strong> Esta parte es crucial, ya que garantiza que los dos circuitos
+                (el de entrada y el de salida) estén completamente aislados entre sí. Esto evita que las perturbaciones
+                del lado de entrada lleguen al lado de salida, protegiendo los circuitos sensibles de daños o
+                interferencias. Este aislamiento también protege a los dispositivos en el lado de salida de picos de
+                voltaje u otras condiciones adversas.</li>
+
+            <li><strong>Resistencias y otros componentes pasivos:</strong> Los optoacopladores también incluyen
+                resistencias, diodos, y a veces capacitores, que regulan la corriente y protegen el LED y los otros
+                componentes del circuito. Las resistencias limitan la corriente que pasa a través del LED, evitando que
+                se dañe debido a un exceso de corriente.</li>
+        </ul>
+
+        <h2>Tipos de Optoacopladores</h2>
+        <p>
+            Los optoacopladores pueden variar considerablemente según la aplicación para la que estén diseñados. Algunos
+            de los tipos más comunes son:
+        </p>
+
+        <ul>
+            <li><strong>Optoacopladores con fototransistor:</strong> Este tipo de optoacoplador es el más común y se
+                utiliza principalmente para señales de conmutación digitales. El fototransistor tiene dos estados:
+                encendido cuando recibe luz y apagado cuando no. Son ideales para señales digitales, como encender o
+                apagar un dispositivo. Son simples, de bajo costo y ampliamente utilizados en electrónica de control.
+            </li>
+
+            <div class="image-container">
+                <img src="Optoacoplador con fototransistor.gif" alt="Optoacoplador con fototransistor">
+            </div>
+
+            <li><strong>Optoacopladores con fotodiodo:</strong> En este tipo, el fotodiodo reemplaza al fototransistor.
+                Los fotodiodos responden más rápidamente que los fototransistores, lo que los hace adecuados para
+                aplicaciones de alta frecuencia o donde se requiere una respuesta rápida. Además, algunos fotodiodos se
+                utilizan en circuitos de amplificación de señales analógicas debido a su alta velocidad y precisión.
+            </li>
+
+            <div class="image-container">
+                <img src="Optoacoplador con fotodiodo.jpg" alt="Optoacoplador con fotodiodo">
+            </div>
+
+            <li><strong>Optoacopladores con TRIAC:</strong> Los optoacopladores con TRIAC se utilizan en aplicaciones de
+                corriente alterna (AC), donde el dispositivo de salida es un TRIAC (un interruptor que permite controlar
+                la corriente alterna). Estos optoacopladores son ideales para controlar cargas de alta potencia, como
+                luces o motores, utilizando señales de baja potencia en el lado de entrada.</li>
+
+            <div class="image-container">
+                <img src="Optoacoplador con TRIAC.gif" alt="Optoacoplador con TRIAC">
+            </div>
+
+            <li><strong>Optoacopladores con SCR (Silicon Controlled Rectifier):</strong> Estos optoacopladores están
+                diseñados para aplicaciones de control de alta corriente. El SCR permite que una corriente de alta
+                potencia fluya solo cuando el optoacoplador recibe una señal de entrada. Son utilizados en aplicaciones
+                industriales y de control de potencia, ya que pueden manejar cargas pesadas de forma eficiente.</li>
+
+            <li><strong>Optoacopladores con fotomúltiple:</strong> Estos dispositivos integran múltiples
+                fototransistores o fotodiodos en un solo encapsulado, lo que permite transmitir varias señales al mismo
+                tiempo, mejorando la eficiencia del sistema. Son útiles en aplicaciones donde se requiere una
+                conmutación rápida de varias señales a la vez, como en sistemas de control de comunicaciones o redes.
+            </li>
+
+            <li><strong>Optoacopladores con salida de corriente analógica:</strong> Algunos optoacopladores están
+                diseñados para convertir una señal de corriente analógica a otro tipo de señal analógica. Estos
+                optoacopladores son utilizados en aplicaciones donde se requiere un control preciso de la señal, como en
+                sistemas de medición o reguladores de voltaje.</li>
+        </ul>
+
+        <h2>Aplicaciones de los Optoacopladores</h2>
+        <p>
+            Los optoacopladores tienen un amplio rango de aplicaciones, algunas de las cuales incluyen:
+        </p>
+
+        <ul>
+            <li><strong>Aislamiento de señales:</strong> Protegen los sistemas electrónicos de interferencias
+                eléctricas, transitorios de voltaje o ruidos.</li>
+            <li><strong>Control de motores:</strong> Se utilizan en sistemas de control de velocidad y encendido de
+                motores, tanto en corriente continua como en corriente alterna.</li>
+            <li><strong>Interfaces de comunicación:</strong> Son fundamentales para asegurar la correcta transmisión de
+                señales entre distintos sistemas o componentes, aislando cada parte para evitar interferencias.</li>
+            <li><strong>Fuentes de alimentación:</strong> Son empleados para aislar los sistemas de la línea de
+                alimentación y asegurar la seguridad de los equipos conectados.</li>
+            <li><strong>Automatización industrial:</strong> Usados en PLCs (Controladores Lógicos Programables) y otros
+                sistemas de automatización para la protección y aislamiento de circuitos.</li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
